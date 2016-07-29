@@ -2,7 +2,7 @@
 layout: default
 title: Markdown 语法
 ---
-## 今天是{{ page.date }}
+## 今天是{{ page.date | date_to_string }}
 # 欢迎使用 Cmd Markdown 编辑阅读器
 
 ------

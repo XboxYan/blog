@@ -1,3 +1,7 @@
+---
+layout: default
+title: 你好，世界
+---
 # 欢迎使用 Cmd Markdown 编辑阅读器
 ------
 <h4>今天是 {{ page.date | date_to_string }}</h4>

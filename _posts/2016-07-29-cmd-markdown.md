@@ -1,4 +1,4 @@
-## 今天是
+<p>今天是 {{ page.date | date_to_string }}</p>
 
 # 欢迎使用 Cmd Markdown 编辑阅读器
 

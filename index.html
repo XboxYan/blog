@@ -1,10 +1,19 @@
 ---
 title: 我的Blog
 ---
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .title{ color:red}
+    </style>
+</head>
+<body>
 <h2>{{ page.title }}</h2>
 
-<p>最新文章</p>
+<p class="title">最新文章</p>
 
 <ul>
 
@@ -13,4 +22,5 @@ title: 我的Blog
 　　　　<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 　　　{% endfor %}
 
-</ul
+</ul>
+</body>

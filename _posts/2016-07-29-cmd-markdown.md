@@ -155,7 +155,21 @@ Starry.prototype = {
 
 module.exports = Starry
 ```
-
+### 5. 高亮一段CSS代码
+```javascript
+function Starry(cx,ctx){
+  this.cx = cx;
+  this.ctx = ctx;
+  this.len = 70;
+  this.mousePos = [0, 0];
+  this.easingFactor = 10;
+  this.backgroundColor = 'rgba(0,0,0,0)';
+  this.dotColor = '#fff';
+  this.lineColor = '#fff';
+  this.dots = [];//点
+  this.lines = [];//线
+}
+```
 ### 4. 高亮一段HTML代码
 ```html
 <!DOCTYPE html>
@@ -307,18 +321,4 @@ scrollbar-darkshadow-color:#fff; /*滚动条暗边框（ThreedDarkShadow）颜�
 <script src='./build/index.bundle.js'></script>
 
 ```
-### 5. 高亮一段CSS代码
-```javascript
-function Starry(cx,ctx){
-  this.cx = cx;
-  this.ctx = ctx;
-  this.len = 70;
-  this.mousePos = [0, 0];
-  this.easingFactor = 10;
-  this.backgroundColor = 'rgba(0,0,0,0)';
-  this.dotColor = '#fff';
-  this.lineColor = '#fff';
-  this.dots = [];//点
-  this.lines = [];//线
-}
-```
+

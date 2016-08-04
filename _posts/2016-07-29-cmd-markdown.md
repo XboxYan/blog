@@ -308,8 +308,17 @@ scrollbar-darkshadow-color:#fff; /*滚动条暗边框（ThreedDarkShadow）颜�
 
 ```
 ### 5. 高亮一段CSS代码
-```html
-
-body{font:14px/1.42858 'microsoft yahei', arial, sans-serif; -webkit-font-smoothing: antialiased; }
-
+```javascript
+function Starry(cx,ctx){
+  this.cx = cx;
+  this.ctx = ctx;
+  this.len = 70;
+  this.mousePos = [0, 0];
+  this.easingFactor = 10;
+  this.backgroundColor = 'rgba(0,0,0,0)';
+  this.dotColor = '#fff';
+  this.lineColor = '#fff';
+  this.dots = [];//点
+  this.lines = [];//线
+}
 ```

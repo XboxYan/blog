@@ -41,7 +41,7 @@ Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以�
 $$E=mc^2$$
 
 ### 3. 高亮一段javascript代码
-
+### 4. 高亮一段HTML代码
 ```javascript
 function Starry(cx,ctx){
   this.cx = cx;
@@ -155,6 +155,6 @@ Starry.prototype = {
 
 module.exports = Starry
 ```
-### 4. 高亮一段HTML代码
+
 
 

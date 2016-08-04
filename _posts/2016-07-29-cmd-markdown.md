@@ -308,7 +308,7 @@ scrollbar-darkshadow-color:#fff; /*滚动条暗边框（ThreedDarkShadow）颜�
 
 ```
 ### 5. 高亮一段CSS代码
-```css
+```CSS
 body{font:14px/1.42858 'microsoft yahei', arial, sans-serif; -webkit-font-smoothing: antialiased; }
 h1,h2,h3,h4,h5,h6{font-size:100%; margin:0; font-weight:400;}
 body,form,ul,ol,dl,dd,p{margin:0;}

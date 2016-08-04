@@ -40,7 +40,7 @@ Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以�
 
 $$E=mc^2$$
 
-### 3. 高亮一段代码[^code]
+### 3. 高亮一段javascript代码
 
 ```javascript
 function Starry(cx,ctx){
@@ -154,4 +154,174 @@ Starry.prototype = {
 }
 
 module.exports = Starry
+```
+
+### 4. 高亮一段HTML代码
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/layout.css" type="text/css" rel="stylesheet">
+    <link href="css/animate.css" type="text/css" rel="stylesheet">
+    <link href="css/tips.css" type="text/css" rel="stylesheet">
+    <link href="css/radio.css" type="text/css" rel="stylesheet">
+    <link href="css/checkbox.css" type="text/css" rel="stylesheet">
+    <link href="css/select.css" type="text/css" rel="stylesheet">
+    <link href="css/input.css" type="text/css" rel="stylesheet">
+    <style>
+        html,body {
+scrollbar-face-color:#FB4446; /*滚动条3D表面（ThreedFace）的颜色*/ 
+scrollbar-highlight-color:#fff; /*滚动条3D界面的亮边（ThreedHighlight）颜色*/ 
+scrollbar-shadow-color:#eeeeee; /*滚动条3D界面的暗边（ThreedShadow）颜色*/ 
+scrollbar-3dlight-color:#eeeeee; /*滚动条亮边框颜色*/ 
+scrollbar-arrow-color:#000; /*滚动条方向箭头的颜色 */ 
+scrollbar-track-color:#fff; /*滚动条的拖动区域(TrackBar)颜色*/
+scrollbar-darkshadow-color:#fff; /*滚动条暗边框（ThreedDarkShadow）颜色*/ }
+
+        /*---滚动条默认显示样式--*/  
+::-webkit-scrollbar-thumb{  
+   background-color:#FB4446;  
+   height:50px;  
+   outline-offset:-2px;  
+   outline:2px solid #fff;  
+   -webkit-border-radius:4px;  
+   border: 2px solid #fff;  
+}  
+/*---鼠标点击滚动条显示样式--*/  
+::-webkit-scrollbar-thumb:hover{  
+   background-color: #F01360;  
+   height:50px;  
+   -webkit-border-radius:4px;  
+}  
+/*---滚动条大小--*/  
+::-webkit-scrollbar{  
+   width:8px;  
+   height:8px;  
+}  
+/*---滚动框背景样式--*/  
+::-webkit-scrollbar-track-piece{  
+   background-color:#eee;  
+   -webkit-border-radius:0;  
+}
+        
+        .p {
+            display: inline-block;
+            padding: 10px;
+            background: royalblue;
+            color: #fff;
+        }
+        .h1{
+            padding:20px 0 10px;
+            font-size:18px;
+            color:#333;
+
+        }
+        .h2{
+            font-size:16px;
+            color:#333;
+            padding:5px 0;
+            border-left:5px solid #cecece;
+            padding-left:10px;
+            margin:15px 0;
+        }
+    </style>
+</head>
+
+<body class="ml30">
+    <h1 class="h1">XYUI表单元素美化</h1>
+    <h2 class="h2">#data-tip</h2>
+    <span class="p ui_tips" data-tips="我是提示提示提示提示提示~~" onclick='alert(3)'>提示提示提示提示提示</span>
+    <h2 class="h2">#ui_radio</h2>
+    <label class="ui_radio mr10"><input type="radio" name="item" disabled><span>不可选</span></label>
+    <label class="ui_radio mr10"><input type="radio" name="item"><span>单选1</span></label>
+    <label class="ui_radio mr10"><input type="radio" name="item"><span>单选1</span></label>
+    <label class="ui_radio mr10"><input type="radio" name="item"><span>单选1</span></label>
+    <p><br></p>
+    <label class="ui_radio mr10"><input type="radio" name="item2"><span>单选2</span></label>
+    <label class="ui_radio mr10"><input type="radio" name="item2"><span>单选2</span></label>
+    <label class="ui_radio mr10"><input type="radio" name="item2"><span>单选2</span></label>
+    <label class="ui_radio mr10"><input type="radio" name="item2"><span>单选2</span></label>
+    <h2 class="h2">#ui_checkbox</h2>
+    <p id="check_form">
+        <label class="ui_checkbox mr10"><input type="checkbox" disabled><span>不可选</span></label>
+        <label class="ui_checkbox mr10"><input type="checkbox" class="check_item"><span>多选</span></label>
+        <label class="ui_checkbox mr10"><input type="checkbox" class="check_item"><span>多选</span></label>
+        <label class="ui_checkbox mr10"><input type="checkbox" class="check_item"><span>多选</span></label>
+        <label class="ui_checkbox mr10"><input type="checkbox" class="check_all"><span>全选</span></label>
+    </p>
+    <h2 class="h2">#ui_select</h2>
+    <div class="ui_select" >
+        <select onchange="console.log('1111自带change')">
+            <option>44444444444</option>
+            <option value="5">555555555555</option>
+            <option value="6" selected>66666666</option>
+            <option value="7" >77777</option>
+            <option value="8">888888888</option>
+            <option value="9">99999</option>
+        </select>
+    </div>
+    <label class="ui_select">
+        <select onchange="console.log('2222自带change')">
+            <option value="4">44444444444</option>
+            <option value="5">555555555555</option>
+            <option value="6">66666666</option>
+            <option>77777</option>
+            <option value="8" selected>888888888</option>
+        </select>
+    </label>
+    <label class="ui_select" >
+        <select onchange="console.log('1111自带change')" disabled>
+            <option>44444444444</option>
+            <option value="5" selected>555555555555</option>
+            <option value="6" >66666666</option>
+            <option value="7" >77777</option>
+            <option value="8">888888888</option>
+            <option value="9">99999</option>
+        </select>
+    </label>
+    <h2 class="h2">#ui_input</h2>
+    <label class="ui_input mr10">
+        <input type="text" placeholder="请输入点什么吧...">
+    </label>
+    <label class="ui_input ui_search_input" placeholder>
+        <input type="search" placeholder="请搜索点什么.."><a class="ui_icon_search" onclick="alert(2)"></a>
+    </label>
+    <label class="ui_input ui_search_right" placeholder>
+        <input type="search" placeholder="请搜索点什么.."><a class="ui_icon_search" onclick="alert(2)"></a>
+    </label>
+    <div class="ui_input ui_search_right mt10" placeholder>
+        <input type="search" placeholder="请搜索点什么.."><a class="ui_icon_search"></a>
+    </div>
+    <div class="ui_input mt10" placeholder>
+        <textarea type="search" placeholder="请输入点什么吧.." rows='5'></textarea>
+    </div>
+    <h2 class="h2">#ui_input</h2>
+</body>
+
+</html>
+
+<script src='./build/index.bundle.js'></script>
+
+```
+### 5. 高亮一段CSS代码
+```css
+body{font:14px/1.42858 'microsoft yahei', arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1,h2,h3,h4,h5,h6{font-size:100%; margin:0; font-weight:400;}
+body,form,ul,ol,dl,dd,p{margin:0;}
+ul,ol{list-style-type:none; padding: 0;}
+img{border:0 none;vertical-align:middle;}
+button,input,select,textarea{font-size:1em; font-family: inherit; *font-family: 'microsoft yahei';}
+a{text-decoration:none;outline: 0;star:expression(this.onFocus=this.blur()); }
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+textarea{ overflow:auto; resize: vertical;}
+:active,:focus{ outline: 0;}
+input::-ms-clear{display:none;}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 2dppx){ 
+    /* Retina 下仍使用默认字体渲染 */
+	body { -webkit-font-smoothing: subpixel-antialiased; }
+}
 ```

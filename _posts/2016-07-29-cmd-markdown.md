@@ -3,6 +3,7 @@ layout: default
 title: Markdown
 ---
 # 欢迎使用 Cmd Markdown 编辑阅读器
+<p>今天是{{ page.date | date_to_string }}</p>
 ------
 
 我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，**Cmd Markdown** 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：
@@ -36,7 +37,7 @@ Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以�
 
 ### 2. 书写一个质能守恒公式[^LaTeX]
 
-$$E=mc^2$$
+``E=mc^2``
 ### 3. 高亮一段代码HTML[^code]
 
 ```html

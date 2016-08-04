@@ -308,20 +308,8 @@ scrollbar-darkshadow-color:#fff; /*滚动条暗边框（ThreedDarkShadow）颜�
 
 ```
 ### 5. 高亮一段CSS代码
-```CSS
+```css
+
 body{font:14px/1.42858 'microsoft yahei', arial, sans-serif; -webkit-font-smoothing: antialiased; }
-h1,h2,h3,h4,h5,h6{font-size:100%; margin:0; font-weight:400;}
-body,form,ul,ol,dl,dd,p{margin:0;}
-ul,ol{list-style-type:none; padding: 0;}
-img{border:0 none;vertical-align:middle;}
-button,input,select,textarea{font-size:1em; font-family: inherit; *font-family: 'microsoft yahei';}
-a{text-decoration:none;outline: 0;star:expression(this.onFocus=this.blur()); }
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
-textarea{ overflow:auto; resize: vertical;}
-:active,:focus{ outline: 0;}
-input::-ms-clear{display:none;}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 2dppx){ 
-    /* Retina 下仍使用默认字体渲染 */
-	body { -webkit-font-smoothing: subpixel-antialiased; }
-}
+
 ```

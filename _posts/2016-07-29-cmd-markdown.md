@@ -35,9 +35,7 @@ Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以�
 - [x] 修复 LaTex 公式渲染问题
 - [x] 新增 LaTex 公式编号功能
 
-### 2. 书写一个质能守恒公式[^LaTeX]
-
-``E=mc^2``
+### 2. 高亮一段代码html
 
 ```html
 <!DOCTYPE html>

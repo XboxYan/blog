@@ -10,9 +10,11 @@ window.onresize = function () {
     }
     St.render();
 };
-console.log(cx.offsetTop)
 cx.onmousemove = function (e) {
     St.mousePos[0] = e.clientX - cx.offsetLeft;
     St.mousePos[1] = e.clientY - cx.offsetTop;
 }
 window.onresize();
+
+var Rp = new Ripple('.ripple');
+Rp.init();

@@ -1,25 +1,28 @@
 function Ripple(obj){
-    this.centerX = 0;
-    this.centerY = 0;
-    this.color = '';
+    this.ripple = [];
     this.containers = document.querySelectorAll(obj);
-    this.context = {};
-    this.element = {};
-    this.radius = 0;
 }
 Ripple.prototype = {
     init : function(){
         var self = this;
         containers = Array.prototype.slice.call(this.containers);
         for (var i = 0; i < this.containers.length; i += 1) {
-          var canvas = document.createElement('canvas');
-          canvas.addEventListener('click', function(){self.press(event)}, false);
-          containers[i].appendChild(canvas);
-          canvas.width  = canvas.clientWidth;
-          canvas.height = canvas.clientHeight;
+          var rp = document.createElement('span');
+          rp.className = 'ripple_effect'
+          containers[i].index = i;
+          containers[i].addEventListener('click', function(){self.press(event)}, false);
+          containers[i].appendChild(rp);
+          var r = ( containers[i].clientWidth>containers[i].clientHeight ) ?containers[i].clientWidth:containers[i].clientHeight;
+          rp.style.width  = r*2 + 'px';
+          rp.style.height = r*2 + 'px';
+          rp.style.marginTop = -r + 'px';
+          rp.style.marginLeft = -r + 'px';
+          this.ripple.push(rp)
         }
+        console.log(this.ripple)
     },
     press : function(event){
+        
         this.color = '#333';
         this.element = event.toElement;
         this.context = this.element.getContext('2d');

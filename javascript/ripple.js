@@ -24,8 +24,8 @@ Ripple.prototype = {
         self.classList.remove('active');
         var X = event.pageX-offset(self).left;
         var Y = event.pageY-offset(self).top;
-        this.ripple[self.index].style.left = X;
-        this.ripple[self.index].style.top = Y;
+        this.ripple[self.index].style.left = X + 'px';
+        this.ripple[self.index].style.top = Y + 'px';
         self.classList.add('active');
         this.timer = setTimeout(function(){ 
             self.classList.remove('active');

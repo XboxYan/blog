@@ -1,4 +1,5 @@
 function Ripple(obj){
+    this.timer = null;
     this.ripple = [];
     this.containers = document.querySelectorAll(obj);
 }
@@ -10,38 +11,36 @@ Ripple.prototype = {
           var rp = document.createElement('span');
           rp.className = 'ripple_effect'
           containers[i].index = i;
-          containers[i].addEventListener('click', function(){self.press(event)}, false);
+          containers[i].addEventListener('click', function(){self.press(event,this)}, false);
           containers[i].appendChild(rp);
           var r = ( containers[i].clientWidth>containers[i].clientHeight ) ?containers[i].clientWidth:containers[i].clientHeight;
-          rp.style.width  = r*2 + 'px';
-          rp.style.height = r*2 + 'px';
-          rp.style.marginTop = -r + 'px';
-          rp.style.marginLeft = -r + 'px';
-          this.ripple.push(rp)
+          rp.style.width  = r*3 + 'px';
+          rp.style.height = r*3 + 'px';
+          this.ripple.push(rp);
         }
-        console.log(this.ripple)
     },
-    press : function(event){
-        
-        this.color = '#333';
-        this.element = event.toElement;
-        this.context = this.element.getContext('2d');
-        this.radius = 0;
-        this.centerX = event.offsetX;
-        this.centerY = event.offsetY;
-        this.context.clearRect(0, 0, this.element.width, this.element.height);
-        this.draw();
+    press : function(event,self){
+        clearTimeout(this.timer);
+        self.classList.remove('active');
+        var X = event.pageX-offset(self).left;
+        var Y = event.pageY-offset(self).top;
+        this.ripple[self.index].style.left = X;
+        this.ripple[self.index].style.top = Y;
+        self.classList.add('active');
+        this.timer = setTimeout(function(){ 
+            self.classList.remove('active');
+        },1000)
     },
-    draw : function(){
-        this.context.beginPath();
-        this.context.arc(this.centerX, this.centerY, this.radius, 0, 2 * Math.PI, false);
-        this.context.fillStyle = this.color;
-        this.context.fill();
-        this.radius += 2;
-        if (this.radius < this.element.width) {
-            requestAnimationFrame(this.draw.bind(this));
-        }else{
-            this.context.clearRect(0, 0, this.element.width, this.element.height);
-        }
-      }
 }
+
+function offset( elements ){ 
+    var top = elements.offsetTop; 
+    var left = elements.offsetLeft; 
+    var parent = elements.offsetParent; 
+    while( parent != null ){ 
+    top += parent.offsetTop; 
+    left += parent.offsetLeft; 
+    parent = parent.offsetParent; 
+    }; 
+    return {top:top,left:left}; 
+}; 

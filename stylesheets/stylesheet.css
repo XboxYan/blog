@@ -20,7 +20,7 @@ body{ padding-top: 300px; background: #fcfcfc; }
 .top_item{ padding: 15px; width: 54px; height: 54px;}
 .top .material-icons{ font-size: 24px;}
 #canvas{ position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
-.ripple{ position: relative; overflow: hidden; margin: 130px;}
+.ripple{ position: relative; overflow: hidden;}
 .ripple_effect{ position: absolute; border-radius: 100%; left: 0; top: 0; transform:scale(0) translate(-50%,-50%); background: rgba(0,0,0,0.3); }
 .ripple.active .ripple_effect{ animation: ripple 1s;}
 @keyframes ripple{

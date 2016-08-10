@@ -38,9 +38,9 @@ function offset( elements ){
     var left = elements.offsetLeft; 
     var parent = elements.offsetParent; 
     while( parent != null ){ 
-    top += parent.offsetTop; 
-    left += parent.offsetLeft; 
-    parent = parent.offsetParent; 
+        top += parent.offsetTop; 
+        left += parent.offsetLeft; 
+        parent = parent.offsetParent; 
     }; 
     return {top:top,left:left}; 
 }; 

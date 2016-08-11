@@ -1,41 +1,15 @@
+--- 
+layout: default 
+title: 我的Blog 
 ---
-title: 我的Blog
----
-<!DOCTYPE html>
-<html lang="en">
+<h2><i class="material-icons">book</i>{{ page.title }}</h2>
 
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
-    <meta charset="UTF-8">
-    <link href="iconfont/material-icons.css" type="text/css" rel="stylesheet">
-    <link href="stylesheets/stylesheet.css" type="text/css" rel="stylesheet">
-</head>
-<body>
-    <div class="header">
-        <div class="top">
-            <a href="javascript:;" class="top_item ripple"><i class="material-icons">menu</i></a>
-            <a href="javascript:;" class="top_item ripple"><i class="material-icons">search</i></a>
-        </div>
-        <canvas id="canvas"></canvas>
-    </div>
-    <div class="main">
-        <h2><i class="material-icons">book</i>{{ page.title }}</h2>
+<p class="title ">最新文章</p>
 
-        <p class="title ">最新文章</p>
+<ul>
 
-        <ul>
+    {% for post in site.posts %}
+    <li class="ripple"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
 
-        　　{% for post in site.posts %}
-        　　　　<li class="ripple"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-        　　{% endfor %}
-
-        </ul>
-
-    </div>
-
-</body>
-<script src="javascript/canvas.js"></script>
-<script src="javascript/ripple.js"></script>
-<script src="javascript/index.js"></script>
-</html>
+</ul>

@@ -323,6 +323,7 @@ $.fn.extend({
         })
     },
     'offset':function(){
+        //文档顶部的距离
         var top = this[0].offsetTop; 
         var left = this[0].offsetLeft; 
         var parent = this[0].offsetParent; 

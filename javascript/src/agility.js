@@ -323,7 +323,7 @@ $.fn.extend({
         })
     },
     'offset':function(){
-        var top = this[0].offsetTop + document.body.scrollTop; 
+        var top = this[0].offsetTop - document.body.scrollTop; 
         var left = this[0].offsetLeft; 
         var parent = this[0].offsetParent; 
         while( parent != null ){ 
@@ -334,18 +334,6 @@ $.fn.extend({
         return {top:top,left:left}; 
     }
 })
-
-function offset( elements ){ 
-    var top = elements.offsetTop + document.body.scrollTop; 
-    var left = elements.offsetLeft; 
-    var parent = elements.offsetParent; 
-    while( parent != null ){ 
-        top += parent.offsetTop; 
-        left += parent.offsetLeft; 
-        parent = parent.offsetParent; 
-    }; 
-    return {top:top,left:left}; 
-}; 
 
 
 /**

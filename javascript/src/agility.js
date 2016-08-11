@@ -323,7 +323,7 @@ $.fn.extend({
         })
     },
     'offset':function(){
-        var top = this[0].offsetTop - document.body.scrollTop; 
+        var top = this[0].offsetTop; 
         var left = this[0].offsetLeft; 
         var parent = this[0].offsetParent; 
         while( parent != null ){ 

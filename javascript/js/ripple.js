@@ -34,7 +34,7 @@ Ripple.prototype = {
 }
 
 function offset( elements ){ 
-    var top = elements.offsetTop - document.body.scrollTop; 
+    var top = elements.offsetTop; 
     var left = elements.offsetLeft; 
     var parent = elements.offsetParent; 
     while( parent != null ){ 

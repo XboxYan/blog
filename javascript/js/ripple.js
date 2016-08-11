@@ -22,7 +22,7 @@ Ripple.prototype = {
     press : function(event,self){
         clearTimeout(this.timer);
         self.classList.remove('active');
-        var X = event.clientX-$(self).offset.left;
+        var X = event.clientX-$(self).offset().left;
         var Y = event.clientY-$(self).offset().top;
         this.ripple[self.index].style.left = X + 'px';
         this.ripple[self.index].style.top = Y + 'px';

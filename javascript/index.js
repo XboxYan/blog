@@ -18,3 +18,5 @@ window.onresize();
 
 var Rp = new Ripple('.ripple');
 Rp.init();
+
+console.log($('.title ').offset())

@@ -22,8 +22,8 @@ Ripple.prototype = {
     press : function(event,self){
         clearTimeout(this.timer);
         self.classList.remove('active');
-        var X = event.pageX-offset(self).left;
-        var Y = event.pageY-offset(self).top;
+        var X = event.clientX-offset(self).left;
+        var Y = event.clientY-offset(self).top;
         this.ripple[self.index].style.left = X + 'px';
         this.ripple[self.index].style.top = Y + 'px';
         self.classList.add('active');
@@ -34,7 +34,7 @@ Ripple.prototype = {
 }
 
 function offset( elements ){ 
-    var top = elements.offsetTop + document.body.scrollTop; 
+    var top = elements.offsetTop - document.body.scrollTop; 
     var left = elements.offsetLeft; 
     var parent = elements.offsetParent; 
     while( parent != null ){ 

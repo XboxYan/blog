@@ -31,9 +31,11 @@ Post by {{ page.date | date_to_string }}
 
 * [MarkdownPad](http://markdownpad.com/)
 * [MarkPad](http://code52.org/DownmarkerWPF/)
+
 > Mac平台
 
 * [Mou](http://mouapp.com/)
+
 > Linux平台
 
 * [ReText](http://sourceforge.net/p/retext/home/ReText/)

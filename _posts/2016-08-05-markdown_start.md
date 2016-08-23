@@ -7,7 +7,7 @@ Post by {{ page.date | date_to_string }}
 
 *****
 
->Markdown 是一种轻量级的「标记语言」，它的优点很多，目前也被越来越多的写作爱好者，撰稿者广泛使用。看到这里请不要被「标记」、「语言」所迷惑，Markdown 的语法十分简单。常用的标记符号也不超过十个，这种相对于更为复杂的HTML 标记语言来说，Markdown 可谓是十分轻量的，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。
+> Markdown 是一种轻量级的「标记语言」，它的优点很多，目前也被越来越多的写作爱好者，撰稿者广泛使用。看到这里请不要被「标记」、「语言」所迷惑，Markdown 的语法十分简单。常用的标记符号也不超过十个，这种相对于更为复杂的HTML 标记语言来说，Markdown 可谓是十分轻量的，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。
 
 ## 认识 Markdown
 
@@ -15,7 +15,7 @@ Post by {{ page.date | date_to_string }}
 
 ### Markdown 官方文档
 
->这里可以看到官方的 Markdown 语法规则文档，当然，后文我也会用自己的方式，阐述这些语法在实际使用中的用法。
+> 这里可以看到官方的 Markdown 语法规则文档，当然，后文我也会用自己的方式，阐述这些语法在实际使用中的用法。
 
 * [Markdown 中文版语法说明](http://www.markdown.cn/)
 
@@ -27,14 +27,14 @@ Post by {{ page.date | date_to_string }}
 * 可读，直观。适合所有人的写作语言。
 
 ### Markdown相关工具
->Windows平台
+> Windows平台
 
 * [MarkdownPad](http://markdownpad.com/)
 * [MarkPad](http://code52.org/DownmarkerWPF/)
->Mac平台
+> Mac平台
 
 * [Mou](http://mouapp.com/)
->Linux平台
+> Linux平台
 
 * [ReText](http://sourceforge.net/p/retext/home/ReText/)
 
@@ -46,7 +46,9 @@ Post by {{ page.date | date_to_string }}
 ![Visual Studio Code]({{ site.baseurl }}/image/2016-08-05/vscode.png)
 
 ## Markdown 基本语法
+
 ### 标题
+
 标题是每篇文章都需要也是最常用的格式，在 Markdown 中，如果一段文字被定义为标题，只要在这段文字前加 `#` 号即可( *注意：#号后面有空格* )。
 
 ```
@@ -70,7 +72,9 @@ Post by {{ page.date | date_to_string }}
 依次类推,分别对应html中的h1~h6
 
 ### 列表
+
 熟悉 HTML 的同学肯定知道有序列表与无序列表的区别，在 Markdown 下，列表的显示只需要在文字前加上 `-` 或 `*` 即可变为无序列表，有序列表则直接在文字前加 `1. 2. 3.` 符号要和文字之间加上一个字符的*空格*。
+
 #### 无序列表
 
 ```
@@ -82,6 +86,7 @@ Post by {{ page.date | date_to_string }}
 * 列表1
 * 列表2
 * 列表3
+
 #### 有序列表
 
 ```
@@ -95,6 +100,7 @@ Post by {{ page.date | date_to_string }}
 3. 列表3
 
 ### 引用
+
 如果你需要引用一小段别处的句子，那么就要用引用的格式，用`>`符号。
 
 ```
@@ -104,7 +110,9 @@ Post by {{ page.date | date_to_string }}
 > 引用一段文字
 
 ### 图片与链接
+
 插入链接与插入图片的语法很像，区别在于图片前面要添加 `!`号
+
 #### 插入连接
 
 ```
@@ -112,6 +120,7 @@ Post by {{ page.date | date_to_string }}
 ```
 
 [百度一下](https://www.baidu.com/)
+
 #### 插入图片
 
 ```
@@ -119,7 +128,9 @@ Post by {{ page.date | date_to_string }}
 ```
 
 ![百度一下](https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top_ca79a146.png)
+
 ### 粗体与斜体
+
 Markdown 的粗体和斜体也非常简单，用两个 `* `包含一段文本就是粗体的语法，用一个 `*` 包含一段文本就是斜体的语法。
 
 ```
@@ -127,10 +138,13 @@ Markdown 的粗体和斜体也非常简单，用两个 `* `包含一段文本就
 ```
 
 例如：**这里是粗体** *这里是斜体*
+
 ### 高亮代码
+
 如果你是个程序猿，需要在文章里优雅的引用代码框，在 Markdown 下实现也非常简单，只需要用两个 ``` 把中间的代码包裹起来，如 `code`。
 
 在插件的支持下，Markdown 还支持html\css\javascript等各种语言的高亮显示(***用三个`来引用，这里为了不引起冲突，只用了两个***)
+
 #### 高亮一段html代码
 
 ```

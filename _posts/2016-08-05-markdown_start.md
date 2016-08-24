@@ -126,7 +126,7 @@ Post by {{ page.date | date_to_string }}
 #### 插入图片
 
 ```
-[百度一下](https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top_ca79a146.png)
+![百度一下](https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top_ca79a146.png)
 ```
 
 ![百度一下](https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top_ca79a146.png)
@@ -226,11 +226,18 @@ module.exports = Starry
 
 ```
 ****
+---
+* * *
 ```
 
 ***
 
+---
+
+* * *
+
 ### 表格
+
 表格稍稍有点麻烦，直接看代码吧
 
 ```

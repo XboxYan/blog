@@ -43,15 +43,17 @@ Post by {{ page.date | date_to_string }}
 还有本人常用的编辑工具
 
 * [Cmd Markdown 编辑阅读器](https://www.zybuluo.com/mdeditor)
-* [Visual Studio Code](https://www.visualstudio.com/products/code-vs)也支持Markdown文档编辑与预览
+* [Visual Studio Code](https://www.visualstudio.com/products/code-vs) 也支持Markdown文档编辑与预览
 
 ![Visual Studio Code]({{ site.baseurl }}/image/2016-08-05/vscode.png)
 
 ## Markdown 基本语法
 
+*注意：大部分符号后面和文字之间有空格，每条不同语法之间空一行*
+
 ### 标题
 
-标题是每篇文章都需要也是最常用的格式，在 Markdown 中，如果一段文字被定义为标题，只要在这段文字前加 `#` 号即可( *注意：#号后面有空格* )。
+标题是每篇文章都需要也是最常用的格式，在 Markdown 中，如果一段文字被定义为标题，只要在这段文字前加 `#` 号即可。
 
 ```
 # 一级标题
@@ -136,14 +138,14 @@ Post by {{ page.date | date_to_string }}
 Markdown 的粗体和斜体也非常简单，用两个 `* `包含一段文本就是粗体的语法，用一个 `*` 包含一段文本就是斜体的语法。
 
 ```
-例如：**这里是粗体** *这里是斜体*
+例如：**这里是粗体** *这里是斜体* ***这里是斜粗体***
 ```
 
-例如：**这里是粗体** *这里是斜体*
+例如：**这里是粗体** *这里是斜体* ***这里是斜粗体***
 
 ### 高亮代码
 
-如果你是个程序猿，需要在文章里优雅的引用代码框，在 Markdown 下实现也非常简单，只需要用两个 ``` 把中间的代码包裹起来，如 `code`。
+如果你是个程序猿，需要在文章里优雅的引用代码框，在 Markdown 下实现也非常简单，只需要用两个重音符 （``） 把中间的代码包裹起来，如 `code`。
 
 在插件的支持下，Markdown 还支持html\css\javascript等各种语言的高亮显示(***用三个`来引用，这里为了不引起冲突，只用了两个***)
 

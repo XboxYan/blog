@@ -37,6 +37,6 @@ body{ padding-top: 300px; background: #fcfcfc; }
 .page_date{ height: 30px; line-height: 30px; color: #999; font-size: 14px;}
 .page_content{ line-height: 1.8em; font-size: 16px; color: #333; padding: 15px 0;}
 .page_tags{ padding-bottom: 15px;}
-.page_tags a{ display: inline-block; font-size: 12px;  margin-right: 5px; height: 24px; line-height: 24px; padding: 0 10px; border-radius: 2px; color: #333; background: #ccc; transition: .3s;}
+.page_tags a{ display: inline-block; font-size: 12px;  margin-right: 5px; height: 24px; line-height: 24px; padding: 0 10px; border-radius: 2px; color: #999; background: #eee; transition: .3s;}
 .page_tags a:hover{ text-decoration: none; color:#fff;background: #1e90ff;}
 .page_enter{ font-size: 14px; color: #1e90ff; }

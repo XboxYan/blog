@@ -63,7 +63,13 @@ flex
     -webkit-justify-content: space-between;
     justify-content: space-between;
 }
-
+/*子元素交叉轴对齐方式-顶部对齐*/
+.flex-ali-start{
+    -webkit-box-align: start;
+    -moz-align-items: flex-start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
 /*子元素交叉轴对齐方式-居中*/
 .flex-ali-center{
     -webkit-box-align: center;
@@ -80,13 +86,7 @@ flex
     align-items: flex-end;
 }
 
-/*子元素交叉轴对齐方式-上下对齐并铺满*/
-.flex-ali-stretch{
-    -webkit-box-align: stretch;
-    -moz-align-items: stretch;
-    -webkit-align-items: stretch;
-    align-items: stretch;
-}
+
 
 /*flex: 1*/
 .flex-item{

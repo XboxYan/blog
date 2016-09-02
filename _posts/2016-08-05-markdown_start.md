@@ -1,6 +1,7 @@
 ---
 layout: markdown
 title: Markdown 简易入门指南
+categories: [markdown]
 ---
 # Markdown 简易入门指南
 Post by {{ page.date | date_to_string }}

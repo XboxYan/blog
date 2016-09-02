@@ -1,6 +1,7 @@
 ---
 layout: markdown
 title: Markdown 自定义样式
+categories: [markdown]
 ---
 # Markdown 自定义样式
 Post by {{ page.date | date_to_string }}

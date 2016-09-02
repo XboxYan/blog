@@ -15,8 +15,13 @@
     <div class="header">
         <canvas id="canvas"></canvas>
     </div>
-    <div class="main">
-        {{ content }}
+    <div class="main flexbox">
+        <div class="content con flex-item">
+            {{ content }}
+        </div>
+        <div class="aside con">
+            111
+        </div>
     </div>    
 </body>
 <script src="{{ site.baseurl }}/javascript/src/agility.js"></script>

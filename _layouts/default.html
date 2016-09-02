@@ -20,14 +20,7 @@
             {{ content }}
         </div>
         <div class="aside con">
-            {% for category in site.categories %}
-            <h2>{{ category | first }}<span>({{ category | last | size }})</span></h2>            
-            <ul class="arc-list">
-                {% for post in category.last %}
-                    <li>{{ post.date | date:"%Y年%m月%d日"}} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-                {% endfor %}
-            </ul>
-            {% endfor %}
+            {% include side.html %}
         </div>
     </div> 
 </body>

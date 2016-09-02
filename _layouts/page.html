@@ -10,7 +10,14 @@
 </head>  
 
 <body>
-    
-    {{ content }}
+    {% include nav.html param="sub" %}
+    <div class="main flexbox flex-ali-start">
+        <div class="content con flex-item">
+            {{ content }}
+        </div>
+        <div class="aside con">
+            {% include side.html %}
+        </div>
+    </div> 
 </body>
 </html>

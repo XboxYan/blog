@@ -1,3 +1,3 @@
-$(window).on('scroll',function(ev){
-    console.log(ev.scrollTop())
+$('body').on('scroll',function(ev){
+    console.log(ev)
 })

@@ -1,9 +1,9 @@
 $(window).on('scroll',function(ev){
     if(document.body.scrollTop>230){
         $('#nav').addClass('sub');
-        $('#content').addClass('fixed');
+        $('#main').addClass('fixed');
     }else{
         $('#nav').removeClass('sub');
-        $('#content').removeClass('fixed');
+        $('#main').removeClass('fixed');
     }
 })

@@ -1,6 +1,6 @@
 body{font-family:Helvetica; -webkit-font-smoothing: antialiased; }
 h1,h2,h3,h4,h5,h6{font-size:100%; margin:0; font-weight:400;}
-body,form,ul,ol,dl,dd,p{margin:0;}
+body,form,ul,ol,dl,dd,p,blockquote{margin:0;}
 ul,ol{list-style-type:none; padding: 0;}
 img{border:0 none;vertical-align:middle;}
 a{text-decoration:none;outline: 0;}

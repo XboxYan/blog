@@ -15,13 +15,11 @@
     <div class="header">
         <canvas id="canvas"></canvas>
     </div>
-    <div class="main flexbox flex-ali-start">
-        <div class="content con flex-item">
+    <div class="main">
+        <div class="content con">
             {{ content }}
         </div>
-        <div class="aside con">
-            {% include side.html %}
-        </div>
+        {% include side.html %}
     </div> 
 </body>
 <script src="{{ site.baseurl }}/javascript/src/agility.js"></script>

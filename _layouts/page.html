@@ -13,13 +13,11 @@
 
 <body>
     {% include nav.html param="sub" %}
-    <div class="main flexbox flex-ali-start">
-        <div class="content con flex-item">
+    <div class="main">
+        <div class="content con">
             {{ content }}
         </div>
-        <div class="aside con">
-            {% include side.html %}
-        </div>
+        {% include side.html param="fixed" %}
     </div> 
     <script src="{{ site.baseurl }}/javascript/src/agility.js"></script>
     <script src="{{ site.baseurl }}/javascript/js/ripple.js"></script>

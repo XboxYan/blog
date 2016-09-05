@@ -4,7 +4,7 @@ layout: default
 
 <div>
       {% for category in site.categories %}
-      <h2><a href="{{site.baseurl}}/categories/index.html#{{ category | first }}">{{ category | first }}<span>({{ category | last | size }})</span></a></h2>
+      <h2><a href="#{{ category | first }}">{{ category | first }}<span>({{ category | last | size }})</span></a></h2>
       {% endfor %}
 
       <hr>

@@ -1,5 +1,5 @@
 $(window).on('scroll',function(ev){
-    if(document.body.scrollTop>240){
+    if(document.body.scrollTop>250){
         $('#nav').addClass('sub');
         console.log(33)
     }else{

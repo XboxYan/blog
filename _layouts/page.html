@@ -14,10 +14,10 @@
 <body>
     {% include nav.html param="sub" %}
     <div class="main">
-        <div class="content con">
+        <div class="content con fixed">
             {{ content }}
         </div>
-        {% include side.html param="fixed" %}
+        {% include side.html %}
     </div> 
     <script src="{{ site.baseurl }}/javascript/src/agility.js"></script>
     <script src="{{ site.baseurl }}/javascript/js/ripple.js"></script>

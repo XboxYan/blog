@@ -110,5 +110,6 @@ a:hover { text-decoration: underline; }
 }
 .content{ margin-right: 20px;}
 .con{background: #fff; padding: 20px; box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); border-radius: 3px;}
-.aside{ position: absolute; right: 0; top: 0; width: 300px; transition: .3s;}
-.aside.fixed{ position: fixed; top: 74px;}
+.aside{ position: absolute; box-sizing: border-box; left: 50%; margin-left: 300px; top: 0; width: 300px; transition: .3s;}
+.content.fixed{ position:static;}
+.content.fixed .aside{ top: 70px;}

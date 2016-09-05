@@ -1,4 +1,4 @@
-<div class="aside con">
+<div class="aside con {{include.param}}" id="aside">
       {% for category in site.categories %}
       <h2><a href="/categories/{{ category | first }}/">{{ category | first }}<span>({{ category | last | size }})</span></a></h2>
       <ul class="arc-list">

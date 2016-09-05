@@ -1,3 +1,7 @@
 $(window).on('scroll',function(ev){
-    console.log(document.body.scrollTop)
+    if(document.body.scrollTop>240){
+        $('#nav').addClass('sub');
+    }else{
+        $('#nav').removeClass('sub');
+    }
 })

@@ -32,3 +32,5 @@ Ripple.prototype = {
         },1000)
     },
 }
+var Rp = new Ripple('.ripple');
+Rp.init();

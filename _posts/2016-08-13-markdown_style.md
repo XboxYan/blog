@@ -10,6 +10,8 @@ Post by {{ page.date | date_to_string }}
 
 ## Markdown 在不同环境下的区别
 
+<!--excerpt-->
+
 前面一篇 [*Markdown 简易入门指南*]({{site.baseurl}}/2016-08-05/markdown_start.html) 已经简单介绍了常见`Markdown`的语法，我们可以用这几种语法很轻松的实现文章中的各种布局和样式，但是你会发现，在不同的编辑器中，Markdown所展现的页面是有区别的，比如*github*和*Cmd Markdown*:
 
 #### github

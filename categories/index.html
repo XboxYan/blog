@@ -1,21 +1,21 @@
 --- 
-layout: default 
+layout: page 
 ---
-
+<h2 class="flex-item flex-ali-center my_title"><i class="material-icons">class</i>{{ page.title }}</h2>
 <div>
-      {% for category in site.categories %}
-      <h2><a href="#{{ category | first }}">{{ category | first }}<span>({{ category | last | size }})</span></a></h2>
-      {% endfor %}
-
-      <hr>
-
-      {% for category in site.categories %}
-      <h2 id="{{ category | first }}">{{ category | first }}<span>({{ category | last | size }})</span></h2>
-      <ul class="arc-list">
-            {% for post in category.last %}
-            <li>{{ post.date | date:"%Y年%m月%d日"}} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      <ul class="category_list">
+            {% for category in site.categories %}
+            <li><a href="#{{ category | first }}">{{ category | first }} ({{ category | last | size }})</a></li>
             {% endfor %}
       </ul>
-      {% endfor %}
-          
+      <div class="category_detail">
+            {% for category in site.categories %}
+            <h2 id="{{ category | first }}">{{ category | first }}<span>({{ category | last | size }})</span></h2>
+            <ul class="arc-list">
+                  {% for post in category.last %}
+                  <li>{{ post.date | date:"%Y年%m月%d日"}} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                  {% endfor %}
+            </ul>
+            {% endfor %}
+      </div> 
 </div>

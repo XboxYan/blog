@@ -6,11 +6,11 @@ title: 我的Blog
 
     {% for post in site.posts %}
     <li class="page_item">
-        <a class="page_title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <a class="page_title link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         <div class="page_date">发表于{{post.date | date:"%Y年%m月%d日"}}</div>
         <div class="page_content">{{ post.excerpt }}</div>
         <div class="page_tags"><a href="#">标签1</a><a href="#">标签2</a></div>
-        <a class="page_enter" href="{{ site.baseurl }}{{ post.url }}">阅读全文>></a>
+        <a class="page_enter link" href="{{ site.baseurl }}{{ post.url }}">阅读全文>></a>
     </li>
     {% endfor %}
 

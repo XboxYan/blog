@@ -8,4 +8,4 @@ body{ padding-top: 70px; background: #f3f4f6; }
 .arc-list{ padding-left: 20px;}
 .arc-list li{ line-height: 1.8em; margin: 5px 0; font-size: 16px; }
 .category_body a{color: inherit; transition: .3s;}
-.category_body a:hover{color: dodgerblue;}
+.category_detail .material-icons{ margin-right: 5px;}

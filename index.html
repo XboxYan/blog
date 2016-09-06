@@ -4,7 +4,7 @@ title: 我的Blog
 ---
 <ul class="page_list">
 
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     <li class="page_item">
         <a class="page_title link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         <div class="page_date flexbox flex-ali-center">

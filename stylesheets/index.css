@@ -1,6 +1,6 @@
 body{ padding-top: 300px; background: #f3f4f6; }
 .page_item{ padding-bottom: 20px; border-bottom: 1px solid #eee;}
-.page_title{ display: inline-block; height: 50px; font-size: 24px; line-height: 50px; color: rgba(39, 48, 57, 0.8); transition: .3s;}
+.page_title{ display: inline-block; height: 50px; padding-top: 10px; font-size: 24px; line-height: 50px; color: rgba(39, 48, 57, 0.8); transition: .3s;}
 .page_title:hover{ color: #1e90ff;}
 .page_date{ height: 30px; line-height: 30px; color: #999; font-size: 14px;}
 .page_content{ line-height: 1.8em; font-size: 16px; color: dimgray; padding-left: 15px; border-left: 4px solid #ccc; margin: 10px 0 15px 0;}

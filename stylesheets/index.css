@@ -1,5 +1,4 @@
 body{ padding-top: 300px; background: #fcfcfc; }
-.page_list{ padding: 0 20px;}
 .page_item{ padding-bottom: 20px; border-bottom: 1px solid #eee;}
 .page_title{ display: inline-block; height: 50px; font-size: 24px; line-height: 50px; color: dodgerblue;}
 .page_title:hover{ }

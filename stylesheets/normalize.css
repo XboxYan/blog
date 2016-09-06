@@ -95,7 +95,7 @@ flex
     -webkit-flex: 1;
     flex: 1;
 }
-a.link{ color: inherit;}
+a{ color: inherit;}
 a.link:after{content: 'call_made '; font-family: 'Material Icons'; margin:0 5px; font-style: normal; vertical-align: baseline; font-size: 80%; -webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;-moz-osx-font-smoothing: grayscale;font-feature-settings: 'liga';}
 a.link:hover{color: dodgerblue;}
 .header{ position: absolute;left: 0; top: 0; width: 100%; height: 500px; background: dodgerblue;}

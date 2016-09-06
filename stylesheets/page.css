@@ -1,5 +1,5 @@
 body{ padding-top: 70px; background: #f3f4f6; }
-.my_title{ font-size: 24px; color: dodgerblue; margin: 0 0 20px;}
+.my_title{ font-size: 24px; color: dodgerblue; margin: 0 0 20px;padding-bottom: 10px;border-bottom: 1px solid rgba(39,48,57,.15); }
 .category_list{ padding-top: 10px; color:rgba(39, 48, 57, 0.8)}
 .category_list li{ margin: 5px 0; font-size: 16px;line-height: 1.8em; }
 .category_list a{ color: inherit;}

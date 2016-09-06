@@ -1,6 +1,11 @@
 body{ padding-top: 70px; background: #f3f4f6; }
 .my_title{ position: relative; font-size: 24px; color:rgba(39, 48, 57, 0.8); margin: 0 0 20px;padding-bottom: 10px;border-bottom: 1px solid rgba(39,48,57,.15); }
 .my_title:before{ content: '';position: absolute; left: 0;bottom: -1px;background: dodgerblue; width: 130px; height: 1px;}
-.category_list{ padding-top: 10px; color:rgba(39, 48, 57, 0.8)}
+.category_list{ color:rgba(39, 48, 57, 0.8)}
 .category_list li{ margin: 5px 0; font-size: 16px;line-height: 1.8em; }
-.category_list a{ color: inherit;}
+.category_detai{color:rgba(39, 48, 57, 0.8)}
+.category_detail h2{ padding: 20px 0; font-size: 18px;}
+.arc-list{ padding-left: 20px;}
+.arc-list li{ line-height: 1.8em; margin: 5px 0; font-size: 14px; }
+.category_body a{color: inherit; transition: .3s;}
+.category_body a:hover{color: dodgerblue;}

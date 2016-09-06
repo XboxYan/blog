@@ -1,7 +1,7 @@
 ---
 layout: page_content
 title: Markdown 自定义样式
-categories: [markdown]
+categories: markdown
 ---
 
 ## Markdown 在不同环境下的区别

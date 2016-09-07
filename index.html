@@ -20,16 +20,16 @@ title: 我的Blog
 </ul>
 
 {% if paginator.total_pages > 1 %}
-<div class="pagination">
+<div class="pagination flexbox">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    <a class="page_arrow" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="material-icons">&#xE314;</i></a>
   {% else %}
-    <span>&laquo; Prev</span>
+    <a class="page_arrow no_page" title="已经到达第一页"><i class="material-icons">&#xE314;</i></a>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-      <em>{{ page }}</em>
+      <a class="current">{{ page }}</a>
     {% elsif page == 1 %}
       <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
     {% else %}
@@ -38,9 +38,9 @@ title: 我的Blog
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    <a class="page_arrow" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="material-icons">&#xE315;</i></a>
   {% else %}
-    <span>Next &raquo;</span>
+    <a class="page_arrow no_page" title="已经到达最后一页"><i class="material-icons">&#xE315;</i></a>
   {% endif %}
 </div>
 {% endif %}

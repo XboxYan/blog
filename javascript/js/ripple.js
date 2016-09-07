@@ -11,7 +11,8 @@ Ripple.prototype = {
           var rp = document.createElement('span');
           rp.className = 'ripple_effect'
           containers[i].index = i;
-          containers[i].addEventListener('click', function(){self.press(event,this)}, false);
+          $(containers[i]).on('click',function(event){self.press(event,this)})
+          //containers[i].addEventListener('click', function(){self.press(event,this)}, false);
           containers[i].appendChild(rp);
           var r = ( containers[i].clientWidth>containers[i].clientHeight ) ?containers[i].clientWidth:containers[i].clientHeight;
           rp.style.width  = r*3 + 'px';

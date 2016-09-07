@@ -1,4 +1,5 @@
 body{ padding-top: 300px; background: #f3f4f6; }
+.page_list{ padding: 0; margin: 0; list-style: none;}
 .page_item{ padding-bottom: 20px; border-top: 1px solid #eee; color: rgba(39, 48, 57, 0.8);}
 .page_list .page_item:first-child{ border: 0;}
 .page_title{ display: inline-block; height: 50px; padding-top: 10px; font-size: 24px; line-height: 50px; transition: .3s;}

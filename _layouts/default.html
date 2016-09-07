@@ -25,7 +25,7 @@
         {% if paginator.total_pages > 1 %}
         <div class="pagination">
         {% if paginator.previous_page %}
-            <a class="page_arrow" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="material-icons">&#xE314;</i></a>
+            <a class="page_arrow ripple" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="material-icons">&#xE314;</i></a>
         {% else %}
             <a class="page_arrow no_page" title="已经到达第一页"><i class="material-icons">&#xE314;</i></a>
         {% endif %}
@@ -34,14 +34,14 @@
             {% if page == paginator.page %}
             <a class="current">{{ page }}</a>
             {% elsif page == 1 %}
-            <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+            <a class="ripple" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
             {% else %}
-            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+            <a class="ripple" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
             {% endif %}
         {% endfor %}
 
         {% if paginator.next_page %}
-            <a class="page_arrow" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="material-icons">&#xE315;</i></a>
+            <a class="page_arrow ripple" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="material-icons">&#xE315;</i></a>
         {% else %}
             <a class="page_arrow no_page" title="已经到达最后一页"><i class="material-icons">&#xE315;</i></a>
         {% endif %}

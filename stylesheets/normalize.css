@@ -117,5 +117,5 @@ a.link:hover{color: dodgerblue;}
 .category_list{list-style-type:none; padding: 0; margin: 0; color:rgba(39, 48, 57, 0.8)}
 .category_list li{ margin: 5px 0; font-size: 18px;line-height: 1.8em; }
 .category_detail{color:rgba(39, 48, 57, 0.8)}
-.category_detail h2{ padding: 20px 0; font-size: 18px;}
+.category_detail h2{ padding: 20px 0 15px; font-size: 18px;}
 .aside .my_title{ font-size: 20px;}

@@ -119,3 +119,7 @@ a.link:hover{color: dodgerblue;}
 .category_detail{color:rgba(39, 48, 57, 0.8)}
 .category_detail h2{ padding: 20px 0 15px; font-size: 18px;}
 .aside .my_title{ font-size: 20px;}
+.top{ position: fixed; left: 0; top: 0; z-index: 100; width: 100%; color: #fff; transition: .3s;}
+.top_item{ width: 54px; height: 54px; color: #fff;}
+.top .material-icons{ font-size: 24px; margin: 0;}
+.top.sub{ background: dodgerblue;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);}

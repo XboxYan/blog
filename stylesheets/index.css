@@ -9,7 +9,7 @@ body{ padding-top: 300px; background: #f3f4f6; }
 .page_tags a:hover{ text-decoration: none; color:#fff;background: dodgerblue;}
 .page_enter{ font-size: 14px; color: #1e90ff; }
 /*分页*/
-.pagination{ text-align: center; background: #fff; border-radius: 3px;border: 1px solid rgba(39,48,57,.08);box-shadow: 0 0 5px rgba(39,48,57,.05);}
-.pagination a{ padding: 0 10px; height: 36px; font-size: 16px; color: #777; text-align: center; line-height: 36px;}
+.pagination{ margin: 20px auto; text-align: center; background: #fff; font-size: 0; border-radius: 3px;border: 1px solid rgba(39,48,57,.08);box-shadow: 0 0 5px rgba(39,48,57,.05);}
+.pagination a{ display: inline-block; width: 40px; height: 36px; font-size: 16px; color: #777; text-align: center; line-height: 36px;}
 .pagination a.current{ background: dodgerblue; color: #fff;}
-.pagination .page_arrow{ padding: 0 20px;}
+.pagination .page_arrow{ padding: 0 30px;}

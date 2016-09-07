@@ -1,6 +1,6 @@
 body{font-family:Helvetica; -webkit-font-smoothing: antialiased; }
 h1,h2,h3,h4,h5,h6{font-size:100%; margin:0; font-weight:400;}
-body,form,ul,ol,dl,dd,p,blockquote{margin:0;}
+body,form{margin:0;}
 img{border:0 none;vertical-align:middle;}
 a{text-decoration:none;outline: 0;}
 textarea{ overflow:auto; resize: vertical;}
@@ -114,7 +114,7 @@ a.link:hover{color: dodgerblue;}
 .aside.fixed{ position:fixed;top: 70px;}
 .my_title{ position: relative; font-size: 24px; color:rgba(39, 48, 57, 0.8); margin: 0 0 20px;padding-bottom: 10px;border-bottom: 1px solid rgba(39,48,57,.15); }
 .my_title:before{ content: '';position: absolute; left: 0;bottom: -1px;background: dodgerblue; width: 130px; height: 1px;}
-.category_list{list-style-type:none; padding: 0; color:rgba(39, 48, 57, 0.8)}
+.category_list{list-style-type:none; padding: 0; margin: 0; color:rgba(39, 48, 57, 0.8)}
 .category_list li{ margin: 5px 0; font-size: 18px;line-height: 1.8em; }
 .category_detail{color:rgba(39, 48, 57, 0.8)}
 .category_detail h2{ padding: 20px 0; font-size: 18px;}

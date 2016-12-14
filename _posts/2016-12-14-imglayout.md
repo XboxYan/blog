@@ -22,7 +22,7 @@ categories: css技巧
 
 刚才说到的问题，如果是要求一类图片展示大小相同，我们一般给一个容器（比如100px*100px），把大小限定，然后再限定里面的图片。
 
-```
+```html
 <div>
     <img />
 </div>
@@ -55,7 +55,7 @@ categories: css技巧
 
 ### 方案一：拉伸
 
-```
+```css
 img{ width:100%; height:100%;}
 ```
 [demo]({{site.baseurl}}/demo/2016-12-14/test01.html)
@@ -66,7 +66,7 @@ img{ width:100%; height:100%;}
 
 ### 方案二：居中
 
-```
+```css
 div{ text-align:center;}
 div>img{vertical-align:middle;width:50%;/*由于需要表现居中，所以把图片改小一点*/}
 div:before{content:''; display:inline-block; width:0;height:100%;vertical-align:middle;}
@@ -80,7 +80,7 @@ div:before{content:''; display:inline-block; width:0;height:100%;vertical-align:
 
 ### 方案三：适应
 
-```
+```css
 div{ text-align:center;font-size: 0;/*去除标签空格*/}
 div>img{vertical-align:middle; max-width:100%; max-height:100%;}
 div:before{content:''; display:inline-block; width:0;height:100%;vertical-align:middle;}
@@ -94,7 +94,7 @@ div:before{content:''; display:inline-block; width:0;height:100%;vertical-align:
 
 ### 方案四：填充
 
-```
+```css
 img{width:100%;height:100%;object-fit:cover;}
 ```
 

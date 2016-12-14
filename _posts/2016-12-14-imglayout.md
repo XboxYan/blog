@@ -20,7 +20,7 @@ categories: css技巧
 
 ## 再来看一下问题现象
 
-刚才说到的问题，如果是要求一类图片看着大小相同，我们一般给一个容器（比如100px*100px），把大小限定，然后再限定里面的图片。
+刚才说到的问题，如果是要求一类图片展示大小相同，我们一般给一个容器（比如100px*100px），把大小限定，然后再限定里面的图片。
 
 ```
 <div>
@@ -64,3 +64,48 @@ img{ width:100%; height:100%;}
 
 ![img](http://chuantu.biz/t5/44/1481705412x3707329634.png)
 
+### 方案二：居中
+
+```
+div{ text-align:center;}
+div>img{vertical-align:middle;width:50%;/*由于需要表现居中，所以把图片改小一点*/}
+div:before{content:''; display:inline-block; width:0;height:100%;vertical-align:middle;}
+```
+
+[demo]({{site.baseurl}}/demo/2016-12-14/test02.html)
+
+这个方式稍稍复杂，主要是实现垂直居中的方法，展现效果也还可以，至少图片没有变形
+
+![img](http://chuantu.biz/t5/44/1481706483x3707329634.png)
+
+### 方案三：适应
+
+```
+div{ text-align:center;font-size: 0;/*去除标签空格*/}
+div>img{vertical-align:middle; max-width:100%; max-height:100%;}
+div:before{content:''; display:inline-block; width:0;height:100%;vertical-align:middle;}
+```
+
+[demo]({{site.baseurl}}/demo/2016-12-14/test03.html)
+
+这个原理与方案二基本一致，只是给图片限定了最大宽高，达到适应的效果，而且该方式兼容到IE7，可以满足绝大部分需求。
+
+![img](http://chuantu.biz/t5/44/1481706980x3707329634.png)
+
+### 方案四：填充
+
+```
+img{width:100%;height:100%;object-fit:cover;}
+```
+
+[demo]({{site.baseurl}}/demo/2016-12-14/test04.html)
+
+这个方式简直就是完美了，图片也没有拉伸，而且居中显示，不留空白，代码也很简洁，只多了一行`object-fit:cover`，不足之处在于兼容性不行，IE全军覆没，如果你的项目是移动端的，大可以使用这种方式。
+
+![img](http://chuantu.biz/t5/44/1481707321x3707329634.png)
+
+### 其他方案
+
+以上都是纯css方案，如果想达到最佳效果，可以通过js来处理，一般都会判断一下，支持`object-fit`的浏览器直接使用该css方案，其他则通过计算宽高比，用绝对定位的方式来实现，虽然计算量大了点，不过也能完美实现
+
+这里推荐一个插件[jQthumb](http://www.dowebok.com/124.html),该插件也能完美实现图片展示，不过css用的是`background-size:cover`方法，也比较方便。

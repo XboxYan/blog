@@ -2,3 +2,8 @@ baseurl: /blog
 permalink: /:year-:month-:day/:title.html
 paginate: 5
 paginate_path: "page:num"
+title: Jekyll demo
+description: jekyll_demo
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
